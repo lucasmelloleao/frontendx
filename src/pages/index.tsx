@@ -18,7 +18,7 @@ export default function Home() {
       <div className={styles.login}>
         <form>
           <Input
-            placeholder="Digite seu email"
+            placeholder="Digite seu email 123"
             type="text"
           />
 
