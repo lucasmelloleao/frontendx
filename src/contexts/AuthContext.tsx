@@ -82,13 +82,13 @@ export function AuthProvider({ children }: AuthProviderProps){
     try{
 
 
-      const response = await api.get('/lucas', {
+    //  const response = await api.get('/lucas', {
         
      
 
-      //const response = await api.post('/session', {
-//        email,
-        //password
+      const response = await api.post('/session', {
+        email,
+        password
       })
       // console.log(response.data);
 

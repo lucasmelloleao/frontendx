@@ -10,9 +10,10 @@ export function setupAPIClient(ctx = undefined){
   const api = axios.create({
     baseURL: 'http://44.202.37.178:4000',
         
-    
+
     headers: {
       Authorization: `Bearer ${cookies['@nextauth.token']}`
+     // Authorization: 'application/x-www-form-urlencoded'
     }
   })
 
