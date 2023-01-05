@@ -9,9 +9,16 @@ export function setupAPIClient(ctx = undefined){
 
   const api = axios.create({
     baseURL: 'http://44.202.37.178:4000',
-    headers: {
+    
+    headers: { 
+      'Access-Control-Allow-Origin' : '*',
+      'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+    },
+    
+    
+    //headers: {
      // Authorization: `Bearer ${cookies['@nextauth.token']}`
-    }
+    //}
   })
 
   api.interceptors.response.use(response => {
