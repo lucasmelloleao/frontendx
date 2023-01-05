@@ -12,8 +12,8 @@ export function setupAPIClient(ctx = undefined){
         
 
     headers: {
-      Authorization: `Bearer ${cookies['@nextauth.token']}`
-     // Authorization: 'application/x-www-form-urlencoded'
+     // Authorization: `Bearer ${cookies['@nextauth.token']}`
+      Authorization: 'application/x-www-form-urlencoded'
     }
   })
 
