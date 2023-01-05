@@ -80,9 +80,15 @@ export function AuthProvider({ children }: AuthProviderProps){
 
   async function signIn({ email, password }: SignInProps){
     try{
-      const response = await api.post('/session', {
-        email,
-        password
+
+
+      const response = await api.get('/lucas', {
+        
+     
+
+      //const response = await api.post('/session', {
+//        email,
+        //password
       })
       // console.log(response.data);
 
@@ -119,15 +125,13 @@ export function AuthProvider({ children }: AuthProviderProps){
     try{
       
       
-      const response = await api.get('/lucas', {
-        
-      })
+      
 
-     // const response = await api.post('/users', {
-        //name,
-        //email,
-        //password
-      //})
+      const response = await api.post('/users', {
+        name,
+        email,
+        password
+      })
 
       toast.success("Conta criada com sucesso!")
 
