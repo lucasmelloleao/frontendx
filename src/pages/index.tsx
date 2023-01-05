@@ -55,7 +55,7 @@ export default function Home() {
       <div className={styles.login}>
         <form onSubmit={handleLogin}>
           <Input
-            placeholder="Digite seu email v2"
+            placeholder="Digite seu email v3"
             type="text"
             value={email}
             onChange={ (e) => setEmail(e.target.value) }
