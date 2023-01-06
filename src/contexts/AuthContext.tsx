@@ -80,12 +80,6 @@ export function AuthProvider({ children }: AuthProviderProps){
 
   async function signIn({ email, password }: SignInProps){
     try{
-
-
-    //  const response = await api.get('/lucas', {
-        
-     
-
       const response = await api.post('/session', {
         email,
         password
@@ -124,9 +118,6 @@ export function AuthProvider({ children }: AuthProviderProps){
   async function signUp({ name, email, password}: SignUpProps){
     try{
       
-      
-      
-
       const response = await api.post('/users', {
         name,
         email,
